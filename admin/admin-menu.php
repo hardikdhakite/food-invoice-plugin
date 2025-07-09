@@ -38,17 +38,14 @@ add_action('admin_menu', function () {
     );
 });
 
-function food_invoice_list_page()
-{
+function food_invoice_list_page() {
     require_once plugin_dir_path(__FILE__) . 'invoice-list.php';
 }
 
-function food_invoice_add_page()
-{
+function food_invoice_add_page() {
     require_once plugin_dir_path(__FILE__) . 'invoice-form.php';
 }
 
-function food_invoice_settings_page()
-{
+function food_invoice_settings_page() {
     require_once plugin_dir_path(__FILE__) . 'settings.php';
 }

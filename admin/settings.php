@@ -21,6 +21,15 @@ if (isset($_POST['clear_invoice_history']) && check_admin_referer('clear_invoice
     </form>
 </div>
 <style>
-.button-danger { background: #dc2626 !important; color: #fff !important; border: none; }
-.button-danger:hover, .button-danger:focus { background: #a61b1b !important; color: #fff !important; }
-</style> 
+    .button-danger {
+        background: #dc2626 !important;
+        color: #fff !important;
+        border: none;
+    }
+
+    .button-danger:hover,
+    .button-danger:focus {
+        background: #a61b1b !important;
+        color: #fff !important;
+    }
+</style>

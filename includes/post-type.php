@@ -1,6 +1,6 @@
 <?php
 
-add_action('init', function() {
+add_action('init', function () {
     register_post_type('food_invoice', [
         'labels' => [
             'name' => 'Food Invoices',
@@ -16,4 +16,4 @@ add_action('init', function() {
         ],
         'map_meta_cap' => true,
     ]);
-}); 
+});

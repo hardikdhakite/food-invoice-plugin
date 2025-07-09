@@ -1,7 +1,7 @@
 <?php
 
 add_action('admin_menu', function () {
-    if (!current_user_can('manage_options')) return ;
+    if (!current_user_can('manage_options')) return;
 
     add_menu_page(
         'Create Invoice',

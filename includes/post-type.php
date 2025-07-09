@@ -4,7 +4,7 @@ add_action('init', function () {
     register_post_type('food_invoice', [
         'labels' => [
             'name' => 'Food Invoices',
-            'singular_name' => 'Food Invoice' ,
+            'singular_name' => 'Food Invoice',
         ],
         'public' => false,
         'show_ui' => true,

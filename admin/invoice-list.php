@@ -3,7 +3,7 @@ if (!current_user_can('manage_options')) wp_die('Unauthorized');
 
 if (isset($_POST['bulk_action']) && isset($_POST['invoice_ids']) && is_array($_POST['invoice_ids'])) {
     $action = $_POST['bulk_action'];
-    $ids = array_map('intval', $_POST['invoice_ids']);
+    $ids = array_map('intval', $_POST['invoice_ids']) ;
     if ($action === 'delete') {
         foreach ($ids as $id) {
             wp_delete_post($id, true);

@@ -1,5 +1,5 @@
 <?php
-if (!current_user_can('manage_options')) wp_die('Unauthorized');
+if (!current_user_can('manage_options')) wp_die('Unauthorized') ;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['food_invoice_nonce']) && wp_verify_nonce($_POST['food_invoice_nonce'], 'add_food_invoice')) {
     $event_date = !empty($_POST['event_date']) ? sanitize_text_field($_POST['event_date']) : date('Y-m-d');

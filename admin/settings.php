@@ -2,7 +2,7 @@
 if (!current_user_can('manage_options')) wp_die('Unauthorized');
 if (isset($_POST['clear_invoice_history']) && check_admin_referer('clear_invoice_history_action')) {
     $invoices = get_posts([
-        'post_type' => 'food_invoice',
+        'post_type' => 'food_invoice' ,
         'posts_per_page' => -1,
         'fields' => 'ids',
     ]);

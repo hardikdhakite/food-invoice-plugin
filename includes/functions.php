@@ -25,7 +25,7 @@ add_action('template_redirect', function () {
 
 function food_invoice_render_public($id)
 {
-    $post = get_post(intval($id));
+    $post = get_post(intval($id)) ;
     if (!$post) {
         echo '<div class="notice notice-error"><p>Invoice not found.</p></div>';
         return;
